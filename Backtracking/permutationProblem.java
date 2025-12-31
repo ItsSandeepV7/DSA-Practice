@@ -1,10 +1,13 @@
 public class permutationProblem {
+    static int count =0;
 
     public static void findPermutation(String str,String ans_str){
+        
 
         //Base Case
         if(str.length()==0){
             System.out.println(ans_str);
+            count=count+1;
             return;
         }
 
@@ -19,5 +22,8 @@ public class permutationProblem {
         String str="abc";
         String ans_str="";
         findPermutation(str,ans_str);
+        System.out.println("Total permutations is :"+ count);
     }
 }
+
+
